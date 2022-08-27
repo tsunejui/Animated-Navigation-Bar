@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const About: FC = () => {
-    return <></>
+    return <>About page</>
 }
 
 export default About;

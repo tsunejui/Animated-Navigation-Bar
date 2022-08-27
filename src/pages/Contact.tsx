@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Contact:FC = () => {
-    return <></>
+    return <>Contact page</>
 }
 
 export default Contact;

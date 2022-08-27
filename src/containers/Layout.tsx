@@ -6,7 +6,9 @@ const Layout:FC = () => {
     return (
         <>
             <NavBar />
-            <Outlet />
+            <div className="w-full absolute text-center items-center left-16">
+                <Outlet />
+            </div>
         </>
     )
 }
