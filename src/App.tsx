@@ -1,13 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './containers/Layout';
 
-function App() {
+const App:FC = () => {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path='/about' element={''} />
+          <Route path='/contact' element={''} />
+        </Route>
+      </Routes>
     </div>
   );
 }
